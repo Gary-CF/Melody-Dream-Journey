@@ -1,0 +1,150 @@
+{
+  "version": 1,
+  "modules": {
+    "src/river-material.ts": "renderer",
+    "src/rock-geometry.ts": "renderer",
+    "src/domain/framing-policy.ts": "domain",
+    "src/domain/creative-weather.ts": "domain",
+    "src/domain/cinematic-atmospheres.ts": "domain",
+    "src/model.ts": "domain",
+    "src/design.ts": "domain",
+    "src/core-catalog.ts": "domain",
+    "src/director.ts": "domain",
+    "src/weather.ts": "domain",
+    "src/sequences.ts": "domain",
+    "src/path.ts": "domain",
+    "src/planner.ts": "domain",
+    "src/music-features.ts": "domain",
+    "src/semantic-capabilities.ts": "domain",
+    "src/direction-grounding.ts": "domain",
+    "src/narrative.ts": "application",
+    "src/auto-narrative.ts": "application",
+    "src/review-examples.ts": "application",
+    "src/experience-review.ts": "presentation",
+    "src/evidence-studio.ts": "presentation",
+    "src/brief-studio.ts": "presentation",
+    "src/creative-workflow.ts": "application",
+    "src/creative-repository.ts": "application",
+    "src/creative-compiler.ts": "application",
+    "src/creative-controller.ts": "application",
+    "src/creative-studio.ts": "presentation",
+    "src/studio.ts": "presentation",
+    "src/main.ts": "presentation",
+    "src/asset-lab.ts": "presentation",
+    "src/audio.ts": "adapter",
+    "src/analysis.worker.ts": "adapter",
+    "src/assets.ts": "renderer",
+    "src/landmark-kit.ts": "renderer",
+    "src/world.ts": "renderer",
+    "src/sequence-scene.ts": "renderer",
+    "src/cinematic-scene.ts": "renderer",
+    "src/passage-scene.ts": "renderer",
+    "src/shore-support.ts": "renderer",
+    "src/creative-sky.ts": "renderer",
+    "src/creative-ground.ts": "renderer",
+    "src/creative-scatter.ts": "renderer",
+    "src/creative-road.ts": "renderer",
+    "src/creative-landscape.ts": "renderer",
+    "src/creative-effects.ts": "renderer",
+    "src/player-camera.ts": "domain",
+    "src/petals.ts": "renderer",
+    "src/glow.ts": "renderer",
+    "src/weather-renderer.ts": "renderer",
+    "src/spatial-adapter.ts": "renderer",
+    "src/placement.ts": "renderer",
+    "src/world-content.ts": "renderer",
+    "src/scene-views.ts": "renderer",
+    "src/spatial-overlay.ts": "renderer",
+    "src/spatial-studio.ts": "presentation",
+    "src/visibility-adapter.ts": "renderer",
+    "src/capability-observation.ts": "renderer",
+    "src/sight-index.ts": "renderer",
+    "src/camera-program.ts": "renderer",
+    "src/legacy-camera.ts": "domain",
+    "src/journey-views.ts": "renderer",
+    "src/scene-assembly.ts": "renderer",
+    "src/layout-repair.ts": "renderer",
+    "src/creative-library-view.ts": "presentation",
+    "src/creative-ui.ts": "presentation",
+    "src/creative-water-material.ts": "renderer",
+    "src/creative-history.ts": "application",
+    "src/creative-history-view.ts": "presentation"
+  },
+  "prefixes": [
+    [
+      "src/domain/",
+      "domain"
+    ],
+    [
+      "src/adapters/",
+      "adapter"
+    ],
+    [
+      "server/",
+      "server"
+    ]
+  ],
+  "allowedDependencies": {
+    "domain": [
+      "domain"
+    ],
+    "application": [
+      "domain",
+      "application",
+      "adapter"
+    ],
+    "adapter": [
+      "domain",
+      "adapter"
+    ],
+    "renderer": [
+      "domain",
+      "renderer"
+    ],
+    "presentation": [
+      "domain",
+      "application",
+      "adapter",
+      "renderer",
+      "presentation"
+    ],
+    "server": [
+      "server",
+      "domain"
+    ]
+  },
+  "forbiddenGlobalsByGroup": {
+    "presentation": [
+      "localStorage",
+      "sessionStorage",
+      "indexedDB"
+    ],
+    "application": [
+      "fetch",
+      "localStorage",
+      "sessionStorage",
+      "document",
+      "window",
+      "XMLHttpRequest"
+    ]
+  },
+  "forbiddenDomainGlobals": [
+    "window",
+    "document",
+    "localStorage",
+    "sessionStorage",
+    "indexedDB",
+    "fetch",
+    "XMLHttpRequest",
+    "WebSocket",
+    "Worker",
+    "AudioContext",
+    "HTMLAudioElement",
+    "WebGLRenderingContext",
+    "globalThis",
+    "self",
+    "process",
+    "require",
+    "eval"
+  ]
+}

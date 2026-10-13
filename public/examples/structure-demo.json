@@ -1,0 +1,11 @@
+{
+  "_note": "手工编写的接口测试数据，不是歌曲分析结果。用于默认 120 秒预览。时间为整曲秒数。",
+  "segments": [
+    { "start": 0, "end": 18, "label": "intro" },
+    { "start": 18, "end": 52, "label": "verse" },
+    { "start": 52, "end": 86, "label": "chorus" },
+    { "start": 86, "end": 120, "label": "outro" }
+  ],
+  "beats": [],
+  "downbeats": []
+}

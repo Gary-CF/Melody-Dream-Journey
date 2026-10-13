@@ -1,0 +1,45 @@
+{
+  "status": "local-release-candidate-validated",
+  "checkedAt": "2026-10-13T03:16:44.483Z",
+  "installation": "pnpm install --frozen-lockfile succeeded with its own node_modules; 27 cached packages, registry policy metadata verified; initial offline metadata attempt failed and was not counted as success",
+  "coreTests": {
+    "passed": 24,
+    "failed": 0
+  },
+  "architecture": {
+    "modules": 128,
+    "dependencies": 538,
+    "cycles": 0,
+    "violations": 0
+  },
+  "build": "TypeScript and Vite production build passed",
+  "warnings": [
+    "Three.js production chunk is 518.28 kB; existing build warning, no new performance claim"
+  ],
+  "sourceChanges": [
+    "package.json",
+    "src/asset-lab.ts",
+    "src/evidence-studio.ts",
+    "src/experience-review.ts",
+    "src/main.ts",
+    "vite.config.ts"
+  ],
+  "browser": {
+    "createdAt": "2026-10-13T03:15:29.926Z",
+    "status": "passed",
+    "checks": [
+      "Fresh candidate runs without a configured model",
+      "Timeline seeking and shared-world first/overhead switching",
+      "Chapter pace and clothing edits survive JSON export/import after changing preview",
+      "Synthetic WAV and original LRC import; playback advances real audio element; seek follows audio clock",
+      "Packaged help, structure example and asset lab available"
+    ],
+    "errors": [],
+    "audioEvidence": "Program-generated 8-second tone and original two-line LRC; not a real-song or listening acceptance",
+    "timing": {
+      "time": 4,
+      "audioTime": 4
+    }
+  },
+  "publication": "Not uploaded; GitHub Actions workflow prepared but not run on GitHub"
+}

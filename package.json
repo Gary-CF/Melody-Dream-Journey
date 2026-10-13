@@ -1,0 +1,29 @@
+{
+  "name": "melodic-journey",
+  "version": "0.1.0-rc.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "tsx --test tests/*.test.ts",
+    "check:architecture": "node scripts/architecture.mjs"
+  },
+  "dependencies": {
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.170.0",
+    "prettier": "3.4.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.0"
+  },
+  "license": "MIT",
+  "description": "Editable local music visualization journey demo",
+  "packageManager": "pnpm@11.25.0",
+  "engines": {
+    "node": ">=24"
+  }
+}

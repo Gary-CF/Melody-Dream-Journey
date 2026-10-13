@@ -1,0 +1,121 @@
+.creative-studio {
+  width: min(1120px, calc(100vw - 32px));
+  max-width: none;
+}
+.creative-status {
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: #e9eee8;
+  line-height: 1.7;
+}
+.creative-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 14px 0 22px;
+}
+.creative-studio textarea {
+  min-height: 65px;
+  resize: vertical;
+  width: 100%;
+}
+.creative-candidates {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+.creative-direction {
+  padding: 20px;
+  border: 1px solid #d0d8cc;
+  border-radius: 16px;
+  background: #fffdf6;
+  min-width: 0;
+}
+.creative-direction h3 {
+  margin: 10px 0 14px;
+  font-size: 21px;
+}
+.creative-direction h4 {
+  margin: 14px 0 7px;
+}
+.creative-direction p {
+  font-size: 13px;
+  line-height: 1.8;
+}
+.creative-index {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: #627865;
+}
+.creative-moment {
+  border-top: 1px solid #dce0d5;
+  margin-top: 14px;
+  padding-top: 4px;
+}
+.creative-growth {
+  color: #4d7056;
+}
+.creative-gap {
+  padding: 8px 10px;
+  background: #f8e7d8;
+  border-radius: 8px;
+  color: #8c5836;
+}
+.creative-direction details {
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 12px 0;
+}
+.creative-direction summary,
+.creative-inventory summary {
+  cursor: pointer;
+}
+.creative-inventory {
+  margin-top: 25px;
+  border-top: 1px solid #b8c5b5;
+  padding-top: 16px;
+}
+.creative-inventory[hidden] {
+  display: none;
+}
+.creative-library-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 10px;
+  margin: 12px 0;
+}
+.creative-library-card {
+  padding: 14px;
+  border: 1px solid #d0d8cc;
+  border-radius: 10px;
+  font-size: 12px;
+  min-width: 0;
+}
+.creative-library-card p {
+  line-height: 1.7;
+}
+.creative-library-card small {
+  display: block;
+  overflow-wrap: anywhere;
+  color: #647464;
+}
+.creative-library-card pre {
+  max-height: 260px;
+  overflow: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 11px;
+}
+@media (max-width: 600px) {
+  .creative-studio {
+    width: calc(100vw - 16px);
+    padding: 18px !important;
+  }
+  .creative-candidates {
+    grid-template-columns: 1fr;
+  }
+  .creative-actions button {
+    flex: 1 1 40%;
+  }
+}
