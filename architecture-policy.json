@@ -1,6 +1,8 @@
 {
   "version": 1,
   "modules": {
+    "src/featured-examples.ts": "presentation",
+    "src/adapters/featured-examples.ts": "adapter",
     "src/immersive-controls.ts": "presentation",
     "src/river-material.ts": "renderer",
     "src/rock-geometry.ts": "renderer",

@@ -1,0 +1,1631 @@
+{
+  "format": "melodic-journey-example",
+  "version": 1,
+  "id": "night-tavern-golden-tree",
+  "title": "夜雨酒馆 · 江畔金桂",
+  "createdAt": "2026-10-02T05:34:48.703Z",
+  "source": {
+    "renderer": "V5 / 18b694ab99578797903dbddad01cd4b5f6773f87",
+    "note": "从第二轮 V5 找回的人工编排视觉样段，96 秒静音时间轴，未附带《成都》录音或歌词。"
+  },
+  "highlights": [
+    {
+      "title": "暖灯酒馆",
+      "time": 29
+    },
+    {
+      "title": "月下金桂",
+      "time": 74
+    }
+  ],
+  "plan": {
+    "schemaVersion": 2,
+    "library": [
+      {
+        "id": "cafe-set",
+        "version": 1,
+        "name": "街边桌椅",
+        "tags": [
+          "daily",
+          "cafe"
+        ],
+        "placement": "curb",
+        "footprint": 1.7,
+        "parts": [
+          {
+            "shape": "cylinder",
+            "color": "#b4825f",
+            "position": [
+              0,
+              0.8,
+              0
+            ],
+            "scale": [
+              0.72,
+              0.12,
+              0.72
+            ],
+            "glow": false
+          },
+          {
+            "shape": "cylinder",
+            "color": "#466165",
+            "position": [
+              0,
+              0.4,
+              0
+            ],
+            "scale": [
+              0.07,
+              0.8,
+              0.07
+            ],
+            "glow": false
+          },
+          {
+            "shape": "box",
+            "color": "#9e785e",
+            "position": [
+              -1.1,
+              0.4,
+              0
+            ],
+            "scale": [
+              0.5,
+              0.12,
+              0.5
+            ],
+            "glow": false
+          },
+          {
+            "shape": "box",
+            "color": "#426368",
+            "position": [
+              -1.1,
+              0.2,
+              0
+            ],
+            "scale": [
+              0.1,
+              0.4,
+              0.4
+            ],
+            "glow": false
+          },
+          {
+            "shape": "box",
+            "color": "#9e785e",
+            "position": [
+              -1.35,
+              0.7,
+              0
+            ],
+            "scale": [
+              0.1,
+              0.6,
+              0.5
+            ],
+            "glow": false
+          },
+          {
+            "shape": "box",
+            "color": "#9e785e",
+            "position": [
+              1.1,
+              0.4,
+              0
+            ],
+            "scale": [
+              0.5,
+              0.12,
+              0.5
+            ],
+            "glow": false
+          },
+          {
+            "shape": "box",
+            "color": "#426368",
+            "position": [
+              1.1,
+              0.2,
+              0
+            ],
+            "scale": [
+              0.1,
+              0.4,
+              0.4
+            ],
+            "glow": false
+          },
+          {
+            "shape": "box",
+            "color": "#9e785e",
+            "position": [
+              1.35,
+              0.7,
+              0
+            ],
+            "scale": [
+              0.1,
+              0.6,
+              0.5
+            ],
+            "glow": false
+          }
+        ],
+        "origin": "builtin"
+      },
+      {
+        "id": "bicycle",
+        "version": 1,
+        "name": "停靠自行车",
+        "tags": [
+          "daily",
+          "transport"
+        ],
+        "placement": "curb",
+        "footprint": 1.5,
+        "parts": [
+          {
+            "shape": "torus",
+            "color": "#345355",
+            "position": [
+              -0.65,
+              0.42,
+              0
+            ],
+            "scale": [
+              0.42,
+              0.42,
+              0.42
+            ],
+            "glow": false
+          },
+          {
+            "shape": "torus",
+            "color": "#345355",
+            "position": [
+              0.65,
+              0.42,
+              0
+            ],
+            "scale": [
+              0.42,
+              0.42,
+              0.42
+            ],
+            "glow": false
+          },
+          {
+            "shape": "box",
+            "color": "#d39065",
+            "position": [
+              0,
+              0.55,
+              0
+            ],
+            "scale": [
+              1.3,
+              0.08,
+              0.08
+            ],
+            "glow": false,
+            "rotation": [
+              0,
+              0,
+              0.3
+            ]
+          },
+          {
+            "shape": "box",
+            "color": "#d39065",
+            "position": [
+              -0.1,
+              0.7,
+              0
+            ],
+            "scale": [
+              0.08,
+              0.6,
+              0.08
+            ],
+            "glow": false
+          },
+          {
+            "shape": "box",
+            "color": "#304a4a",
+            "position": [
+              -0.1,
+              1.02,
+              0
+            ],
+            "scale": [
+              0.32,
+              0.09,
+              0.16
+            ],
+            "glow": false
+          },
+          {
+            "shape": "box",
+            "color": "#d39065",
+            "position": [
+              0.6,
+              0.8,
+              0
+            ],
+            "scale": [
+              0.08,
+              0.8,
+              0.08
+            ],
+            "glow": false,
+            "rotation": [
+              0,
+              0,
+              0.2
+            ]
+          },
+          {
+            "shape": "box",
+            "color": "#304a4a",
+            "position": [
+              0.57,
+              1.22,
+              0
+            ],
+            "scale": [
+              0.1,
+              0.07,
+              0.4
+            ],
+            "glow": false
+          }
+        ],
+        "origin": "builtin"
+      },
+      {
+        "id": "shelter",
+        "version": 1,
+        "name": "候车雨棚",
+        "tags": [
+          "daily",
+          "transport"
+        ],
+        "placement": "curb",
+        "footprint": 2.3,
+        "parts": [
+          {
+            "shape": "box",
+            "color": "#466b67",
+            "position": [
+              0,
+              2.6,
+              0
+            ],
+            "scale": [
+              4.2,
+              0.2,
+              1.9
+            ],
+            "glow": false
+          },
+          {
+            "shape": "box",
+            "color": "#63867b",
+            "position": [
+              -1.8,
+              1.3,
+              -0.5
+            ],
+            "scale": [
+              0.12,
+              2.6,
+              0.12
+            ],
+            "glow": false
+          },
+          {
+            "shape": "box",
+            "color": "#63867b",
+            "position": [
+              1.8,
+              1.3,
+              -0.5
+            ],
+            "scale": [
+              0.12,
+              2.6,
+              0.12
+            ],
+            "glow": false
+          },
+          {
+            "shape": "box",
+            "color": "#c6c9b5",
+            "position": [
+              0,
+              1.5,
+              -0.6
+            ],
+            "scale": [
+              3.5,
+              1.6,
+              0.1
+            ],
+            "glow": false
+          },
+          {
+            "shape": "box",
+            "color": "#a98960",
+            "position": [
+              0,
+              0.55,
+              0
+            ],
+            "scale": [
+              3,
+              0.18,
+              0.5
+            ],
+            "glow": false
+          },
+          {
+            "shape": "box",
+            "color": "#f2d09a",
+            "position": [
+              0,
+              2.4,
+              0.4
+            ],
+            "scale": [
+              3.4,
+              0.07,
+              0.12
+            ],
+            "glow": true
+          }
+        ],
+        "origin": "builtin"
+      },
+      {
+        "id": "planter",
+        "version": 1,
+        "name": "花箱与绿植",
+        "tags": [
+          "daily",
+          "garden"
+        ],
+        "placement": "curb",
+        "footprint": 1.4,
+        "parts": [
+          {
+            "shape": "box",
+            "color": "#b28469",
+            "position": [
+              0,
+              0.35,
+              0
+            ],
+            "scale": [
+              2.2,
+              0.7,
+              0.7
+            ],
+            "glow": false
+          },
+          {
+            "shape": "ball",
+            "color": "#7f9c71",
+            "position": [
+              -0.7,
+              0.85,
+              0
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.5
+            ],
+            "glow": false
+          },
+          {
+            "shape": "ball",
+            "color": "#7f9c71",
+            "position": [
+              0,
+              0.85,
+              0
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.5
+            ],
+            "glow": false
+          },
+          {
+            "shape": "ball",
+            "color": "#7f9c71",
+            "position": [
+              0.7,
+              0.85,
+              0
+            ],
+            "scale": [
+              0.55,
+              0.55,
+              0.5
+            ],
+            "glow": false
+          }
+        ],
+        "origin": "builtin"
+      },
+      {
+        "id": "willow",
+        "version": 1,
+        "name": "垂柳",
+        "tags": [
+          "river",
+          "garden"
+        ],
+        "placement": "curb",
+        "footprint": 2.1,
+        "parts": [
+          {
+            "shape": "cylinder",
+            "color": "#796f5b",
+            "position": [
+              0,
+              1.8,
+              0
+            ],
+            "scale": [
+              0.15,
+              3.6,
+              0.15
+            ],
+            "glow": false
+          },
+          {
+            "shape": "ball",
+            "color": "#739e86",
+            "position": [
+              0,
+              3.7,
+              0
+            ],
+            "scale": [
+              1.6,
+              0.9,
+              1.4
+            ],
+            "glow": false
+          },
+          {
+            "shape": "cone",
+            "color": "#81ae8c",
+            "position": [
+              1.3,
+              2.55,
+              0
+            ],
+            "scale": [
+              0.35,
+              2.7,
+              0.3
+            ],
+            "glow": false,
+            "rotation": [
+              3.141592653589793,
+              0,
+              0
+            ]
+          },
+          {
+            "shape": "cone",
+            "color": "#81ae8c",
+            "position": [
+              0.9958577760546714,
+              2.55,
+              0.7713451316238471
+            ],
+            "scale": [
+              0.35,
+              2.7,
+              0.3
+            ],
+            "glow": false,
+            "rotation": [
+              3.141592653589793,
+              0,
+              0
+            ]
+          },
+          {
+            "shape": "cone",
+            "color": "#81ae8c",
+            "position": [
+              0.22574263096700956,
+              2.55,
+              1.1817693036146495
+            ],
+            "scale": [
+              0.35,
+              2.7,
+              0.3
+            ],
+            "glow": false,
+            "rotation": [
+              3.141592653589793,
+              0,
+              0
+            ]
+          },
+          {
+            "shape": "cone",
+            "color": "#81ae8c",
+            "position": [
+              -0.6499999999999997,
+              2.55,
+              1.0392304845413265
+            ],
+            "scale": [
+              0.35,
+              2.7,
+              0.3
+            ],
+            "glow": false,
+            "rotation": [
+              3.141592653589793,
+              0,
+              0
+            ]
+          },
+          {
+            "shape": "cone",
+            "color": "#81ae8c",
+            "position": [
+              -1.2216004070216808,
+              2.55,
+              0.41042417199080267
+            ],
+            "scale": [
+              0.35,
+              2.7,
+              0.3
+            ],
+            "glow": false,
+            "rotation": [
+              3.141592653589793,
+              0,
+              0
+            ]
+          },
+          {
+            "shape": "cone",
+            "color": "#81ae8c",
+            "position": [
+              -1.221600407021681,
+              2.55,
+              -0.4104241719908024
+            ],
+            "scale": [
+              0.35,
+              2.7,
+              0.3
+            ],
+            "glow": false,
+            "rotation": [
+              3.141592653589793,
+              0,
+              0
+            ]
+          },
+          {
+            "shape": "cone",
+            "color": "#81ae8c",
+            "position": [
+              -0.6500000000000006,
+              2.55,
+              -1.039230484541326
+            ],
+            "scale": [
+              0.35,
+              2.7,
+              0.3
+            ],
+            "glow": false,
+            "rotation": [
+              3.141592653589793,
+              0,
+              0
+            ]
+          },
+          {
+            "shape": "cone",
+            "color": "#81ae8c",
+            "position": [
+              0.22574263096700897,
+              2.55,
+              -1.1817693036146497
+            ],
+            "scale": [
+              0.35,
+              2.7,
+              0.3
+            ],
+            "glow": false,
+            "rotation": [
+              3.141592653589793,
+              0,
+              0
+            ]
+          },
+          {
+            "shape": "cone",
+            "color": "#81ae8c",
+            "position": [
+              0.9958577760546712,
+              2.55,
+              -0.7713451316238474
+            ],
+            "scale": [
+              0.35,
+              2.7,
+              0.3
+            ],
+            "glow": false,
+            "rotation": [
+              3.141592653589793,
+              0,
+              0
+            ]
+          }
+        ],
+        "origin": "builtin"
+      },
+      {
+        "id": "reeds",
+        "version": 1,
+        "name": "岸边芦苇",
+        "tags": [
+          "river",
+          "nature"
+        ],
+        "placement": "curb",
+        "footprint": 1.2,
+        "parts": [
+          {
+            "shape": "cone",
+            "color": "#92a57b",
+            "position": [
+              -0.6,
+              0.7,
+              0
+            ],
+            "scale": [
+              0.16,
+              1.4,
+              0.18
+            ],
+            "glow": false
+          },
+          {
+            "shape": "cone",
+            "color": "#b5ad80",
+            "position": [
+              -0.19999999999999996,
+              0.7,
+              0
+            ],
+            "scale": [
+              0.16,
+              1.65,
+              0.18
+            ],
+            "glow": false
+          },
+          {
+            "shape": "cone",
+            "color": "#92a57b",
+            "position": [
+              0.20000000000000007,
+              0.7,
+              0
+            ],
+            "scale": [
+              0.16,
+              1.9,
+              0.18
+            ],
+            "glow": false
+          },
+          {
+            "shape": "cone",
+            "color": "#b5ad80",
+            "position": [
+              0.6000000000000002,
+              0.7,
+              0
+            ],
+            "scale": [
+              0.16,
+              1.4,
+              0.18
+            ],
+            "glow": false
+          },
+          {
+            "shape": "cone",
+            "color": "#92a57b",
+            "position": [
+              -0.6,
+              0.7,
+              0.4
+            ],
+            "scale": [
+              0.16,
+              1.65,
+              0.18
+            ],
+            "glow": false
+          },
+          {
+            "shape": "cone",
+            "color": "#b5ad80",
+            "position": [
+              -0.19999999999999996,
+              0.7,
+              0.4
+            ],
+            "scale": [
+              0.16,
+              1.9,
+              0.18
+            ],
+            "glow": false
+          },
+          {
+            "shape": "cone",
+            "color": "#92a57b",
+            "position": [
+              0.20000000000000007,
+              0.7,
+              0.4
+            ],
+            "scale": [
+              0.16,
+              1.4,
+              0.18
+            ],
+            "glow": false
+          },
+          {
+            "shape": "cone",
+            "color": "#b5ad80",
+            "position": [
+              0.6000000000000002,
+              0.7,
+              0.4
+            ],
+            "scale": [
+              0.16,
+              1.65,
+              0.18
+            ],
+            "glow": false
+          }
+        ],
+        "origin": "builtin"
+      },
+      {
+        "id": "boat",
+        "version": 1,
+        "name": "平底小船",
+        "tags": [
+          "river",
+          "water"
+        ],
+        "placement": "water",
+        "footprint": 2.6,
+        "parts": [
+          {
+            "shape": "box",
+            "color": "#775f50",
+            "position": [
+              0,
+              0.08,
+              0
+            ],
+            "scale": [
+              1.8,
+              0.45,
+              4
+            ],
+            "glow": false
+          },
+          {
+            "shape": "box",
+            "color": "#bfa17a",
+            "position": [
+              0,
+              0.32,
+              0
+            ],
+            "scale": [
+              1.55,
+              0.07,
+              3.7
+            ],
+            "glow": false
+          },
+          {
+            "shape": "box",
+            "color": "#866756",
+            "position": [
+              -0.9,
+              0.45,
+              0
+            ],
+            "scale": [
+              0.12,
+              0.5,
+              4
+            ],
+            "glow": false
+          },
+          {
+            "shape": "box",
+            "color": "#866756",
+            "position": [
+              0.9,
+              0.45,
+              0
+            ],
+            "scale": [
+              0.12,
+              0.5,
+              4
+            ],
+            "glow": false
+          },
+          {
+            "shape": "box",
+            "color": "#b89673",
+            "position": [
+              0,
+              0.63,
+              0.5
+            ],
+            "scale": [
+              1.6,
+              0.14,
+              0.38
+            ],
+            "glow": false
+          },
+          {
+            "shape": "box",
+            "color": "#d9c6a3",
+            "position": [
+              1.15,
+              0.7,
+              0
+            ],
+            "scale": [
+              0.09,
+              0.09,
+              3.5
+            ],
+            "glow": false,
+            "rotation": [
+              0,
+              0.4,
+              0
+            ]
+          }
+        ],
+        "origin": "builtin"
+      },
+      {
+        "id": "pavilion",
+        "version": 1,
+        "name": "岸边小亭",
+        "tags": [
+          "river",
+          "garden",
+          "landmark"
+        ],
+        "placement": "landmark",
+        "footprint": 3.2,
+        "parts": [
+          {
+            "shape": "cylinder",
+            "color": "#846354",
+            "position": [
+              -1.7,
+              1.7,
+              -1.7
+            ],
+            "scale": [
+              0.13,
+              3.4,
+              0.13
+            ],
+            "glow": false
+          },
+          {
+            "shape": "cylinder",
+            "color": "#846354",
+            "position": [
+              -1.7,
+              1.7,
+              1.7
+            ],
+            "scale": [
+              0.13,
+              3.4,
+              0.13
+            ],
+            "glow": false
+          },
+          {
+            "shape": "cylinder",
+            "color": "#846354",
+            "position": [
+              1.7,
+              1.7,
+              -1.7
+            ],
+            "scale": [
+              0.13,
+              3.4,
+              0.13
+            ],
+            "glow": false
+          },
+          {
+            "shape": "cylinder",
+            "color": "#846354",
+            "position": [
+              1.7,
+              1.7,
+              1.7
+            ],
+            "scale": [
+              0.13,
+              3.4,
+              0.13
+            ],
+            "glow": false
+          },
+          {
+            "shape": "box",
+            "color": "#b9b4a0",
+            "position": [
+              0,
+              0.1,
+              0
+            ],
+            "scale": [
+              4.3,
+              0.25,
+              4.3
+            ],
+            "glow": false
+          },
+          {
+            "shape": "cone",
+            "color": "#547c78",
+            "position": [
+              0,
+              3.7,
+              0
+            ],
+            "scale": [
+              3.3,
+              1.2,
+              3.3
+            ],
+            "glow": false
+          },
+          {
+            "shape": "sphere",
+            "color": "#d8b77c",
+            "position": [
+              0,
+              4.5,
+              0
+            ],
+            "scale": [
+              0.2,
+              0.2,
+              0.2
+            ],
+            "glow": false
+          }
+        ],
+        "origin": "builtin"
+      },
+      {
+        "id": "mountains",
+        "version": 1,
+        "name": "层叠山峦",
+        "tags": [
+          "mountain",
+          "horizon"
+        ],
+        "placement": "backdrop",
+        "footprint": 17,
+        "parts": [
+          {
+            "shape": "cone",
+            "color": "#718d98",
+            "position": [
+              -8,
+              8,
+              -4
+            ],
+            "scale": [
+              11,
+              18,
+              10
+            ],
+            "glow": false
+          },
+          {
+            "shape": "cone",
+            "color": "#93a8ab",
+            "position": [
+              8,
+              11,
+              -12
+            ],
+            "scale": [
+              13,
+              25,
+              13
+            ],
+            "glow": false
+          },
+          {
+            "shape": "cone",
+            "color": "#547982",
+            "position": [
+              0,
+              5,
+              5
+            ],
+            "scale": [
+              12,
+              12,
+              8
+            ],
+            "glow": false
+          }
+        ],
+        "origin": "builtin"
+      },
+      {
+        "id": "roof-garden",
+        "version": 1,
+        "name": "露台花架",
+        "tags": [
+          "daily",
+          "garden"
+        ],
+        "placement": "landmark",
+        "footprint": 3.1,
+        "parts": [
+          {
+            "shape": "box",
+            "color": "#c5b299",
+            "position": [
+              0,
+              0.8,
+              0
+            ],
+            "scale": [
+              4.7,
+              1.6,
+              4
+            ],
+            "glow": false
+          },
+          {
+            "shape": "box",
+            "color": "#678b7d",
+            "position": [
+              -1.9,
+              2.3,
+              0
+            ],
+            "scale": [
+              0.13,
+              3,
+              0.13
+            ],
+            "glow": false
+          },
+          {
+            "shape": "box",
+            "color": "#678b7d",
+            "position": [
+              1.9,
+              2.3,
+              0
+            ],
+            "scale": [
+              0.13,
+              3,
+              0.13
+            ],
+            "glow": false
+          },
+          {
+            "shape": "box",
+            "color": "#8b7c65",
+            "position": [
+              0,
+              3.75,
+              0
+            ],
+            "scale": [
+              4.6,
+              0.15,
+              3
+            ],
+            "glow": false
+          },
+          {
+            "shape": "ball",
+            "color": "#85a17d",
+            "position": [
+              -1.8,
+              1.9,
+              0.9
+            ],
+            "scale": [
+              0.65,
+              0.7,
+              0.65
+            ],
+            "glow": false
+          },
+          {
+            "shape": "ball",
+            "color": "#85a17d",
+            "position": [
+              1.8,
+              1.9,
+              0.9
+            ],
+            "scale": [
+              0.65,
+              0.7,
+              0.65
+            ],
+            "glow": false
+          }
+        ],
+        "origin": "builtin"
+      },
+      {
+        "id": "light-fins",
+        "version": 1,
+        "name": "几何光柱",
+        "tags": [
+          "electric",
+          "light"
+        ],
+        "placement": "curb",
+        "footprint": 1.3,
+        "parts": [
+          {
+            "shape": "box",
+            "color": "#354351",
+            "position": [
+              -0.65,
+              1.6,
+              0
+            ],
+            "scale": [
+              0.18,
+              3.2,
+              0.32
+            ],
+            "glow": false
+          },
+          {
+            "shape": "box",
+            "color": "#65d9dc",
+            "position": [
+              -0.65,
+              1.6,
+              0.18
+            ],
+            "scale": [
+              0.08,
+              2.9,
+              0.06
+            ],
+            "glow": true
+          },
+          {
+            "shape": "box",
+            "color": "#354351",
+            "position": [
+              0,
+              1.9000000000000001,
+              0
+            ],
+            "scale": [
+              0.18,
+              3.8000000000000003,
+              0.32
+            ],
+            "glow": false
+          },
+          {
+            "shape": "box",
+            "color": "#e58dbf",
+            "position": [
+              0,
+              1.9000000000000001,
+              0.18
+            ],
+            "scale": [
+              0.08,
+              3.5,
+              0.06
+            ],
+            "glow": true
+          },
+          {
+            "shape": "box",
+            "color": "#354351",
+            "position": [
+              0.65,
+              2.2,
+              0
+            ],
+            "scale": [
+              0.18,
+              4.4,
+              0.32
+            ],
+            "glow": false
+          },
+          {
+            "shape": "box",
+            "color": "#65d9dc",
+            "position": [
+              0.65,
+              2.2,
+              0.18
+            ],
+            "scale": [
+              0.08,
+              4.1,
+              0.06
+            ],
+            "glow": true
+          }
+        ],
+        "origin": "builtin"
+      },
+      {
+        "id": "lanterns",
+        "version": 1,
+        "name": "暖光灯笼",
+        "tags": [
+          "light",
+          "daily"
+        ],
+        "placement": "curb",
+        "footprint": 1.5,
+        "parts": [
+          {
+            "shape": "cylinder",
+            "color": "#6c655a",
+            "position": [
+              0,
+              1.6,
+              0
+            ],
+            "scale": [
+              0.06,
+              3.2,
+              0.06
+            ],
+            "glow": false
+          },
+          {
+            "shape": "box",
+            "color": "#6c655a",
+            "position": [
+              0,
+              3.2,
+              0
+            ],
+            "scale": [
+              2.2,
+              0.1,
+              0.1
+            ],
+            "glow": false
+          },
+          {
+            "shape": "sphere",
+            "color": "#f2ba71",
+            "position": [
+              -0.8,
+              2.8,
+              0
+            ],
+            "scale": [
+              0.3,
+              0.42,
+              0.3
+            ],
+            "glow": true
+          },
+          {
+            "shape": "sphere",
+            "color": "#f2ba71",
+            "position": [
+              0.8,
+              2.8,
+              0
+            ],
+            "scale": [
+              0.3,
+              0.42,
+              0.3
+            ],
+            "glow": true
+          }
+        ],
+        "origin": "builtin"
+      }
+    ],
+    "atmospheres": [
+      {
+        "id": "day",
+        "name": "清透白昼",
+        "sky": "#cbd9cf",
+        "water": "#639f9e",
+        "ground": "#95ad8f",
+        "light": "#ffe6c6",
+        "accent": "#db976e",
+        "night": 0,
+        "sun": 2.6,
+        "fog": 180,
+        "sparkle": 0.16,
+        "exposure": 1.2
+      },
+      {
+        "id": "dusk",
+        "name": "橘粉黄昏",
+        "sky": "#d9a5a3",
+        "water": "#7b879b",
+        "ground": "#9a977d",
+        "light": "#ffb773",
+        "accent": "#e6ac78",
+        "night": 0.28,
+        "sun": 2.1,
+        "fog": 165,
+        "sparkle": 0.32,
+        "exposure": 1.12
+      },
+      {
+        "id": "night",
+        "name": "华灯初上",
+        "sky": "#283a57",
+        "water": "#203e5c",
+        "ground": "#536760",
+        "light": "#ffcb84",
+        "accent": "#efad69",
+        "night": 1,
+        "sun": 0.55,
+        "fog": 145,
+        "sparkle": 0.65,
+        "exposure": 1.03
+      },
+      {
+        "id": "moon",
+        "name": "澄澈月夜",
+        "sky": "#46577d",
+        "water": "#345476",
+        "ground": "#728780",
+        "light": "#ffe2bb",
+        "accent": "#e8bccc",
+        "night": 1,
+        "sun": 0.75,
+        "fog": 180,
+        "sparkle": 0.85,
+        "exposure": 1.08
+      },
+      {
+        "id": "dawn",
+        "name": "山岚破晓",
+        "sky": "#d8b6ad",
+        "water": "#909eac",
+        "ground": "#91a397",
+        "light": "#ffc58c",
+        "accent": "#f2c398",
+        "night": 0.15,
+        "sun": 2.3,
+        "fog": 210,
+        "sparkle": 0.35,
+        "exposure": 1.2
+      },
+      {
+        "id": "neon",
+        "name": "霓虹暮色",
+        "sky": "#26273f",
+        "water": "#29344d",
+        "ground": "#424b59",
+        "light": "#f9b4d0",
+        "accent": "#5adcdc",
+        "night": 1,
+        "sun": 0.45,
+        "fog": 155,
+        "sparkle": 0.7,
+        "exposure": 1.05
+      }
+    ],
+    "direction": {
+      "style": "auto",
+      "keywords": "",
+      "allowGrowth": true
+    },
+    "analysis": {
+      "method": "preview",
+      "sections": [],
+      "needs": [],
+      "warnings": [
+        "这是人工编排的能力验收样段，不代表自动模型分析质量。"
+      ]
+    },
+    "seed": 233,
+    "mode": "city",
+    "audio": {
+      "duration": 96,
+      "clipStart": 0,
+      "clipEnd": 96,
+      "name": "原创验收样段（静音时间轴）",
+      "fingerprint": ""
+    },
+    "lyrics": {
+      "basis": "song",
+      "offset": 0,
+      "source": "none",
+      "lines": []
+    },
+    "chapters": [
+      {
+        "start": 0,
+        "title": "夜雨 · 暖灯小店",
+        "theme": "night",
+        "source": "preview",
+        "assets": [
+          "tree",
+          "shop",
+          "home",
+          "lamp",
+          "person",
+          "bench"
+        ],
+        "atmosphere": "night",
+        "pace": 1,
+        "recipes": [
+          "cafe-set",
+          "bicycle",
+          "planter",
+          "shelter",
+          "lanterns"
+        ],
+        "moment": {
+          "kind": "none",
+          "duration": 12,
+          "strength": 0.7
+        },
+        "evidence": [
+          "手工能力预览，可用导入歌词与音频重新规划"
+        ],
+        "director": {
+          "view": "overhead",
+          "transition": 8
+        },
+        "weather": {
+          "kind": "rain",
+          "intensity": 0.75,
+          "context": "present",
+          "evidence": "人工样段"
+        }
+      },
+      {
+        "start": 48,
+        "title": "雨停 · 江畔金桂",
+        "theme": "river",
+        "source": "preview",
+        "assets": [
+          "lamp",
+          "bench"
+        ],
+        "atmosphere": "moon",
+        "pace": 1,
+        "recipes": [],
+        "moment": {
+          "kind": "none",
+          "duration": 12,
+          "strength": 0.7
+        },
+        "evidence": [
+          "手工能力预览，可用导入歌词与音频重新规划"
+        ],
+        "director": {
+          "view": "overhead",
+          "transition": 12
+        },
+        "weather": {
+          "kind": "afterRain",
+          "intensity": 0.4,
+          "context": "present",
+          "evidence": "人工验收样段"
+        }
+      }
+    ],
+    "events": [],
+    "path": {
+      "speed": 4.2,
+      "minInterval": 12,
+      "threshold": 0.35,
+      "turnTimes": []
+    },
+    "visual": {
+      "density": 1,
+      "roadWidth": 4.2,
+      "distance": 34,
+      "height": 19,
+      "smoothing": 0.85,
+      "tone": "#eac8b2",
+      "ambient": 1.9,
+      "particles": 0.4,
+      "moonHeight": 15,
+      "moonSize": 3,
+      "clothes": "#ffffff",
+      "observerScale": 0.85,
+      "quality": "high"
+    },
+    "transition": {
+      "seconds": 8,
+      "cameraExpansion": 4
+    },
+    "sequences": [
+      {
+        "id": "review-tavern",
+        "kind": "tavern",
+        "focus": "lantern",
+        "start": 15,
+        "end": 43,
+        "reason": "人工验收：验证人物驻足与大景观构图，不代表自动分析",
+        "source": "review",
+        "lyricIds": []
+      },
+      {
+        "id": "review-bridge",
+        "kind": "bridge",
+        "focus": "osmanthus",
+        "start": 60,
+        "end": 88,
+        "reason": "人工验收：两个完整桥段",
+        "source": "review",
+        "lyricIds": []
+      }
+    ]
+  }
+}

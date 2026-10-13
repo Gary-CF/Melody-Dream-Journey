@@ -2,6 +2,7 @@ import { createBrowserStorage } from "./adapters/scoped-storage";
 import { loadReviewPlan } from "./adapters/review-plan";
 import "./style.css";
 import { installImmersiveControls } from "./immersive-controls";
+import { installFeaturedExamples } from "./featured-examples";
 import { installExperienceReview } from "./experience-review";
 import { installSpatialStudio } from "./spatial-studio";
 import { sequenceAt, sequenceStage, sequenceNames } from "./sequences";
@@ -59,15 +60,24 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
 const $ = <T extends HTMLElement = HTMLElement>(id: string) =>
   document.getElementById(id) as T;
 const evaluationId = new URLSearchParams(location.search).get("evaluation");
-const planStorageKey = evaluationId
-  ? "melodic-journey:evaluation"
-  : new URLSearchParams(location.search).has("example")
-    ? "melodic-journey:review-example"
-    : "melodic-journey";
+const exampleParams = new URLSearchParams(location.search);
+const savedExampleId =
+  exampleParams.get("featured") ?? exampleParams.get("saved-example");
+const exampleCopyId = exampleParams.get("copy");
+const planStorageKey = savedExampleId
+  ? `melodic-journey:example-workspace:${savedExampleId}:${exampleCopyId ?? "original"}`
+  : evaluationId
+    ? "melodic-journey:evaluation"
+    : new URLSearchParams(location.search).has("example")
+      ? "melodic-journey:review-example"
+      : "melodic-journey";
 let plan = withLibrary(defaults());
 let restored = false;
 try {
-  const saved = appStorage.getItem(planStorageKey);
+  const saved =
+    savedExampleId && !exampleCopyId
+      ? null
+      : appStorage.getItem(planStorageKey);
   if (saved) {
     if (!appStorage.getItem("melodic-journey:before-v1"))
       appStorage.setItem("melodic-journey:before-v1", saved);
@@ -1219,12 +1229,45 @@ if (new URLSearchParams(location.search).get("studio") === "narrative")
 if (new URLSearchParams(location.search).get("studio") === "creative")
   creativeStudio.open();
 requestAnimationFrame(frame);
-void player.play();
+if (!savedExampleId) void player.play();
 if (restored) toast("已还原本机配置；本地音频需重新选择。");
 if (startupSpatialFallback)
   toast(
     "已保存计划未通过通行检查，现显示默认预览；原文件未覆盖，可在开发检查导出原候选。",
   );
+installFeaturedExamples({
+  store: appStorage,
+  get: () => ({ plan: structuredClone(plan), time: player.time }),
+  restored: restored && !startupSpatialFallback,
+  apply: (data, time) => {
+    const candidate = validatePlan(data);
+    const prepared = world.prepare(
+      candidate,
+      false,
+      candidate.creativeWorld ? "cinematic" : "compatibility",
+    );
+    prepared.commit();
+    plan = candidate;
+    gallery = false;
+    document.body.classList.remove("gallery");
+    player.stopFile();
+    player.setClip(plan.audio.clipStart, plan.audio.clipEnd);
+    player.seek(Math.max(0, Math.min(time, duration(plan))));
+    player.pause();
+    pending = {};
+    refresh();
+    chooseView("first");
+    world.update(player.time, 0, true);
+    drawWave();
+  },
+  seek: (time) => {
+    player.pause();
+    player.seek(time);
+    world.update(player.time, player.energy, true);
+  },
+  panel,
+  toast,
+});
 if (evaluationId) {
   void loadReviewPlan(evaluationId, location.href)
     .then(({ data, entry }) => {

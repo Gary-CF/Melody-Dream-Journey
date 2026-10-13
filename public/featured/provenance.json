@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "sourceCommit": "18b694ab99578797903dbddad01cd4b5f6773f87",
+  "sourceTag": "round2-v5",
+  "originalPreview": "/review/v5/?example=combined",
+  "recoveredFrom": "Read-only plan export from the preserved V5 runtime",
+  "originalPlanSha256": "a2e2564bdd8124d86fd149d14ea3d29d2c5b320cbe0ed2e658bd0848d4bfc51a",
+  "note": "Plan values preserved verbatim within the example envelope. Current renderer replay is not pixel-identical historical runtime preservation. No audio or lyrics included."
+}

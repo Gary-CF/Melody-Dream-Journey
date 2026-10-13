@@ -66,6 +66,33 @@
         "docs/images/immersive-overhead-75.jpg",
         "docs/images/immersive-first-75.jpg"
       ]
+    },
+    {
+      "feature": "Featured examples and independent local versions",
+      "scope": "Recovered manually authored V5 plan; no director or renderer changes",
+      "build": "TypeScript and Vite build passed",
+      "architecture": "131 modules / 547 dependencies / 0 runtime cycles / 0 violations",
+      "tests": "2 targeted persistence tests passed",
+      "originalPlan": "Deep equality against read-only V5 runtime export passed",
+      "browser": {
+        "status": "passed",
+        "checks": [
+          "catalog and cover",
+          "original read-only and paused highlight",
+          "independent editable workspace restores edits",
+          "save full embedded library",
+          "export and reimport creates separate version",
+          "original unchanged after edit and reload",
+          "same-time dual view",
+          "immersive hides example banner",
+          "390px library fits"
+        ],
+        "errors": []
+      },
+      "screenshots": [
+        "public/featured/golden-tree.jpg",
+        "docs/images/featured-tavern.jpg"
+      ]
     }
   ]
 }

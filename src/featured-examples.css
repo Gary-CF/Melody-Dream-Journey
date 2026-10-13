@@ -1,0 +1,66 @@
+.featured-panel {
+  width: min(410px, calc(100vw - 36px));
+}
+.example-card {
+  margin: 18px 0;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #284c3e22;
+}
+.example-card img {
+  display: block;
+  width: 100%;
+  border-radius: 9px;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+.example-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+.example-card details {
+  margin: 8px 0;
+  font-size: 10px;
+  overflow-wrap: anywhere;
+}
+.example-actions a {
+  text-decoration: none;
+  color: inherit;
+}
+.example-banner {
+  position: absolute;
+  top: 148px;
+  left: 38px;
+  max-width: calc(100vw - 76px);
+  padding: 9px 13px;
+  border-radius: 9px;
+  background: #f7f4ebe8;
+  color: #284c3e;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  z-index: 4;
+}
+.example-banner a {
+  color: inherit;
+}
+body.example-readonly .header-actions > :not(#open-featured),
+body.example-readonly .modes,
+body.example-readonly #open-lyrics,
+body.example-readonly #gallery,
+body.example-readonly #open-plan,
+body.example-readonly .panel:not(.featured-panel) {
+  display: none !important;
+}
+@media (max-width: 600px) {
+  .example-banner {
+    top: 170px;
+    left: 18px;
+    max-width: calc(100vw - 36px);
+  }
+  .featured-panel {
+    right: 18px;
+  }
+}
