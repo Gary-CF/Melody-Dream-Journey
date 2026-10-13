@@ -29,6 +29,14 @@ export function installFeaturedExamples(api: {
   open.className = "ghost";
   open.textContent = "✧ 精选示例";
   document.querySelector(".header-actions")!.prepend(open);
+  if (requested) {
+    const home = document.createElement("a");
+    home.id = "example-home";
+    home.className = "ghost";
+    home.href = new URL(location.pathname, location.origin).href;
+    home.textContent = "← 返回主页";
+    document.querySelector(".header-actions")!.prepend(home);
+  }
   const panel = document.createElement("aside");
   panel.className = "panel featured-panel";
   panel.id = "featured-panel";

@@ -46,7 +46,13 @@
 .example-banner a {
   color: inherit;
 }
-body.example-readonly .header-actions > :not(#open-featured),
+#example-home {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+body.example-readonly .header-actions > :not(#open-featured):not(#example-home),
 body.example-readonly .modes,
 body.example-readonly #open-lyrics,
 body.example-readonly #gallery,
