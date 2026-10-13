@@ -1,6 +1,7 @@
 {
   "version": 1,
   "modules": {
+    "src/immersive-controls.ts": "presentation",
     "src/river-material.ts": "renderer",
     "src/rock-geometry.ts": "renderer",
     "src/domain/framing-policy.ts": "domain",

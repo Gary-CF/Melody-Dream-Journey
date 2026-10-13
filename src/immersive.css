@@ -1,0 +1,102 @@
+.immersive-controls {
+  display: none;
+}
+body.focus #app > :not(#scene):not(.immersive-controls):not(#subtitle),
+body.focus .panel,
+body.focus:not(.immersive-subtitles) #subtitle,
+body.focus.immersive-clean #subtitle {
+  display: none !important;
+}
+body.focus .immersive-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  position: fixed;
+  right: max(16px, env(safe-area-inset-right));
+  bottom: max(16px, env(safe-area-inset-bottom));
+  z-index: 20;
+  width: min(440px, calc(100vw - 32px));
+  color: #213e39;
+}
+body.focus.immersive-clean .immersive-controls {
+  display: none;
+}
+.immersive-controls button {
+  padding: 8px 12px;
+  border-radius: 18px;
+  background: #f5f2e6ed;
+  color: #294e43;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+#immersive-panel {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ffffff80;
+  border-radius: 18px;
+  background: #f5f2e6eb;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 4px 20px #183b3215;
+  max-height: calc(100dvh - 90px);
+  overflow: auto;
+}
+#immersive-panel[hidden] {
+  display: none;
+}
+.immersive-controls .camera-switch {
+  position: static;
+  transform: none;
+  width: auto;
+  margin: 0 0 12px;
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+  background: none;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.immersive-controls .camera-switch span {
+  display: none;
+}
+.immersive-controls .camera-switch button.active {
+  background: #315d50;
+  color: #fff8e8;
+}
+#immersive-transport {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.immersive-controls .playback {
+  display: flex;
+  gap: 6px;
+}
+.immersive-controls .timeline {
+  display: block;
+  flex: 1;
+  min-width: 130px;
+}
+.immersive-controls .volume {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+.immersive-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 12px;
+}
+.immersive-controls p,
+#immersive-status {
+  font-size: 11px;
+  line-height: 1.7;
+  margin: 10px 0 0;
+  color: #60726b;
+}
+body.focus #subtitle {
+  bottom: 32px;
+}

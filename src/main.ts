@@ -1,6 +1,7 @@
 import { createBrowserStorage } from "./adapters/scoped-storage";
 import { loadReviewPlan } from "./adapters/review-plan";
 import "./style.css";
+import { installImmersiveControls } from "./immersive-controls";
 import { installExperienceReview } from "./experience-review";
 import { installSpatialStudio } from "./spatial-studio";
 import { sequenceAt, sequenceStage, sequenceNames } from "./sequences";
@@ -685,10 +686,7 @@ $<HTMLInputElement>("seek").oninput = (e) => {
 };
 $<HTMLInputElement>("volume").oninput = (e) =>
   (player.audio.volume = Number((e.target as HTMLInputElement).value));
-$("focus").onclick = () => {
-  document.body.classList.toggle("focus");
-  panel("none");
-};
+installImmersiveControls(() => panel("none"));
 $("gallery").onclick = () => {
   gallery = !gallery;
   world.galleryId = "";

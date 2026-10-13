@@ -41,5 +41,31 @@
       "audioTime": 4
     }
   },
-  "publication": "Not uploaded; GitHub Actions workflow prepared but not run on GitHub"
+  "publication": "Not uploaded; GitHub Actions workflow prepared but not run on GitHub",
+  "followUpChecks": [
+    {
+      "feature": "Immersive controls",
+      "scope": "Presentation-only change; reusable playback and camera nodes, no director or scene logic changed",
+      "build": "TypeScript and Vite build passed",
+      "architecture": "129 modules / 540 dependencies / 0 cycles / 0 violations",
+      "browser": {
+        "status": "passed",
+        "fullscreen": true,
+        "checks": [
+          "main chrome hidden",
+          "corner panel collapse/expand",
+          "all controls hidden and restored by scene click/H",
+          "same-time and same-world overhead/first screenshots at 75s",
+          "exit restores original nodes",
+          "fullscreen-denied fallback and Escape",
+          "390px corner controls fit"
+        ],
+        "errors": []
+      },
+      "screenshots": [
+        "docs/images/immersive-overhead-75.jpg",
+        "docs/images/immersive-first-75.jpg"
+      ]
+    }
+  ]
 }
