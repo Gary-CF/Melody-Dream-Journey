@@ -1,75 +1,144 @@
-# 乐梦之路 · Melodic Journey
+<h1 align="center">Melody Dream Journey · 乐梦之路</h1>
 
-一个可编辑的音乐视觉旅程 Demo：让小观察者沿连续道路走过城市与诗意风景，将音乐、歌词、场景和观看方式组织成一段可以调整、保存和重播的旅程。
+<p align="center"><strong>Give me a song. I'll give you a dream to walk through.</strong></p>
+<p align="center">An editable music visualizer, told through a little traveler's eyes.</p>
+<p align="center"><strong>English</strong> · <a href="README_CN.md">简体中文</a></p>
+<p align="center"><a href="#a-few-places-to-get-lost">Scenes</a> · <a href="#quick-start">Quick start</a> · <a href="#make-it-your-own">Make it yours</a> · <a href="#the-road-ahead">Road ahead</a> · <a href="LICENSE">MIT</a></p>
 
-![城市漫游实际运行画面](docs/images/city.jpg)
+![A golden flowering tree beside a red bridge, beneath the moon](docs/images/showcase/golden-tree-2.png)
 
-当前版本：`0.1.0-rc.1`，MIT。桌面浏览器优先。基础预览与编辑不需要模型、账号或 API 密钥；自动语义分析与逐曲创作是可选实验功能。
+Some songs leave a place behind: a street still warm from the sun, a light in the rain, a tree you wish you could stand beneath a little longer.
 
-## 五分钟开始
+**Melody Dream Journey** gives those places a small world to live in. A little traveler follows a continuous road through miniature streets and moonlit water. Watch from above, step into their eyes, or let the camera find its way. Bring your own music, shape the scenery, and keep the moments that feel like yours.
 
-需要 Node.js 24 与 pnpm 11.25.0。先安装这些开发工具，再在源码目录运行：
+This release is an **editable browser Demo**. Built-in journeys, local audio, scene editing, immersive viewing and saved examples work without an account, API key or model. Song interpretation and automatic cinematic direction are optional experiments. The application interface is currently in Chinese; the guide below includes its button labels.
+
+## What you can do
+
+| Experience | In this Demo |
+| --- | --- |
+| Walk through a song | Play local MP3/WAV, import LRC lyrics, scrub the timeline and arrange chapters along one continuous route. |
+| See one world from different angles | Overhead and first-person views share the same world and timeline; an automatic camera mode is also available. |
+| Give a scene your own mood | Edit light, weather, clothing, travel speed, layout seed, chapters, components and atmospheres. |
+| Let the interface disappear | Enter immersion, collapse the corner controls or hide them completely for clean screenshots. |
+| Keep a journey worth revisiting | Open a curated original, make an editable copy, save named local versions and export or restore example packages. |
+
+## A few places to get lost
+
+Actual screenshots from the running Demo, grouped by scene. Each row keeps the supplied views together; open an image for the full-size capture. These illustrate the current visual vocabulary and authored examples, rather than guaranteed output for any song.
+
+### A street holding the last of the sun
+
+Follow the little traveler through warm façades and familiar corners. Switch from the miniature overview to street level without rebuilding the world.
+
+<table>
+  <tr><td width="33%"><img src="docs/images/showcase/city-dusk-1.png" alt="Dusk street, overhead view"></td><td width="33%"><img src="docs/images/showcase/city-dusk-2.png" alt="Dusk street, first-person view"></td><td width="33%"><img src="docs/images/showcase/city-dusk-3.png" alt="Dusk street, wider camera view"></td></tr>
+  <tr><td align="center">Above the street</td><td align="center">Through the traveler's eyes</td><td align="center">The wider journey</td></tr>
+</table>
+
+### When the windows become stars
+
+Evening gives way to lamplight. Chapters and atmosphere settings let the same journey change its light and color as it unfolds.
+
+<table>
+  <tr><td width="33%"><img src="docs/images/showcase/city-night-1.png" alt="Night street, overhead view"></td><td width="33%"><img src="docs/images/showcase/city-night-2.png" alt="Night street, first-person view"></td><td width="33%"><img src="docs/images/showcase/city-night-3.png" alt="Night street, wider camera view"></td></tr>
+  <tr><td align="center">A ribbon of lamplight</td><td align="center">A familiar corner</td><td align="center">The city after dark</td></tr>
+</table>
+
+### A moonlit path beside the flowers
+
+A continuous waterside route, flowering trees, benches and a distant pavilion. Pause the timeline and change viewpoints to find your own composition.
+
+<table>
+  <tr><td width="33%"><img src="docs/images/showcase/moonlit-river-1.png" alt="Moonlit waterside path, overhead view"></td><td width="33%"><img src="docs/images/showcase/moonlit-river-2.png" alt="Flower-lined path, first-person view"></td><td width="33%"><img src="docs/images/showcase/moonlit-river-3.png" alt="Moonlit waterside route, wide view"></td></tr>
+  <tr><td align="center">The turn by the water</td><td align="center">Flowers beside the path</td><td align="center">A little world beneath the moon</td></tr>
+</table>
+
+### Somewhere warm, while the rain goes on
+
+The curated tavern sequence brings the traveler inside for a lingering look. Its overhead view opens the room to inspection; first-person viewing brings you beside the table, with the rain beyond the doorway.
+
+<table>
+  <tr><td width="33%"><img src="docs/images/showcase/rainy-tavern-1.png" alt="Rainy tavern with the roof cut away, overhead view"></td><td width="33%"><img src="docs/images/showcase/rainy-tavern-2.png" alt="Warm tavern interior with rain outside, first-person view"></td><td width="33%"><img src="docs/images/showcase/rainy-tavern-3.png" alt="Tavern interior, alternate overhead capture"></td></tr>
+  <tr><td align="center">A room along the road</td><td align="center">Shelter from the rain</td><td align="center">Another look inside</td></tr>
+</table>
+
+### Stay a little longer beneath the golden tree
+
+Beyond the tavern, a red bridge leads the eye toward a flowering osmanthus and the moon. This is the second highlight in the preserved **Rainy Tavern · Golden Osmanthus** example.
+
+<table>
+  <tr><td width="50%"><img src="docs/images/showcase/golden-tree-1.png" alt="Golden osmanthus and red bridge, overhead view"></td><td width="50%"><img src="docs/images/showcase/golden-tree-2.png" alt="Golden osmanthus beneath the moon, first-person view"></td></tr>
+  <tr><td align="center">The bridge and the little traveler</td><td align="center">A moment beneath the tree</td></tr>
+</table>
+
+The curated example is a **96-second, manually arranged silent journey**: tavern at **29s**, golden tree at **74s**. It contains no recording or lyrics of *Chengdu*, and is not a demonstration of automatic song interpretation.
+
+## Quick start
+
+Install **Node.js 24** and **pnpm 11.25.0**, then:
 
 ```sh
+git clone https://github.com/Gary-CF/Melody-Dream-Journey.git
+cd Melody-Dream-Journey
 pnpm install --frozen-lockfile
 pnpm dev
 ```
 
-打开终端显示的本地地址（通常为 `http://127.0.0.1:5173`）。不要直接双击 `index.html`。
+Open the local URL printed by Vite, usually `http://127.0.0.1:5173`. Use a desktop browser with WebGL support. Open the served page rather than double-clicking `index.html`.
 
-1. 无需上传文件，先播放「城市漫游」或「春江花月夜」静音预览。
-2. 在「旅程设置」调整观察者、速度、环境色调与密度；在「场景编排」编辑章节和转角。
-3. 切换俯视或观察者第一人称，尝试暂停、拖动进度和重播。
-4. 选择「导入音乐」加载自己的 MP3/WAV，再导入 LRC 或粘贴歌词。
-5. 在「旅程设置」保存到本机，或导出 JSON；导入同一 JSON 可恢复编排。
+For a first visit, select **精选示例** (Featured examples), then **查看原版** (View original). Jump to either highlight, press play, or enter immersion. **返回主页** brings you back; **复制并编辑** opens an independent editable copy.
 
-### 沉浸观看与截图
+## Make it your own
 
-顶部「精选示例」提供找回的 **夜雨酒馆 · 江畔金桂** 静音样段：29 秒酒馆、74 秒金桂。可查看只读原版、复制并编辑，也可将自己的旅程保存为独立版本并导出备份。它是人工编排示例，未附带《成都》录音或歌词。详见[精选示例与保存说明](docs/featured-examples.md)。
+1. **Choose your music.** Use **导入音乐** to load a local MP3/WAV. Add LRC lyrics, or paste text and adjust its approximate timing.
+2. **Shape the journey.** Use **旅程设置** for appearance and route settings, **场景编排** for chapters, and **旅程创作台** for reusable content and creative tools.
+3. **Find a viewpoint.** Choose overhead, first-person or automatic camera. Spatial pace and pauses do not change audio playback speed.
+4. **Keep a version.** In **精选示例**, name and save the current journey. Each saved version includes its plan, embedded component and atmosphere libraries, source metadata and the saved moment. Export the example package for a portable backup.
 
-点击右侧「沉浸模式」会隐藏 Logo、标题和设置，并尝试进入全屏。视角、播放条和退出操作移到右下角，可收起为小按钮。浏览器不允许全屏时仍可使用页面沉浸。
+Saved examples live in this browser, with up to **20 versions / 2MB per package**. Clearing browser data removes them. Audio is not embedded in exported plans or examples; reselect your recording when you need it. A future renderer may replay the same plan with visual differences. [More about examples and saving →](docs/featured-examples.md) *(Chinese)*
 
-- `H`：隐藏／恢复全部控件；隐藏后也可单击画面恢复。
-- `1 / 2 / 3`：俯视／第一人称／自动导演；暂停时切换保持同一时刻。
-- 空格：播放／暂停（操作滑块或按钮时保留控件原有键盘行为）。
-- `Esc` 或「退出沉浸」：恢复主界面。歌词可在角落面板单独显示。
+### Leave only the scenery
 
-截图时先暂停，再隐藏控件，用 `1 / 2` 切换视角。它只改变观看方式，不重新生成旅程。
+Click the immersion button on the right. The logo and editing panels disappear; camera and playback controls move into a collapsible corner panel. Browser fullscreen is requested when available.
 
-没有模型服务时，自动分析会明确降级为声学预编排。仍可以播放、编辑和保存；不把降级结果称为歌词理解。
+| In immersion | Action |
+| --- | --- |
+| `H` | Hide or restore all controls; clicking the scene also restores them. |
+| `1` / `2` / `3` | Overhead / first-person / automatic camera. |
+| `Space` | Play or pause, unless a focused control is handling the key. |
+| `Esc` | Exit immersion. |
 
-## 已有能力
+For matching screenshots, **pause first**, hide the controls, then switch viewpoints. The world and the paused timeline stay in place.
 
-- 连续道路、自动行进与转弯；空间速度和停留不改变音频播放速度。
-- 本地音频播放、能量与起音分析、LRC 时间基准与偏移、当前字幕。
-- 俯视与第一人称共享世界，昼夜、天气、水面、灯光及章节过渡。
-- 编辑章节、场景、步速、种子、构件和氛围；导入导出计划和可复用内容。
-- 三层库：场景决定空间规则，氛围决定光色与天气，组件提供对象和能力；基础库包含 5 个世界、9 个氛围、48 个基础组件。
-- 可选本地模型分析、原始依据审阅、人工残差修正，以及逐曲创作提案和五阶段重点桥段。
+## Optional: song interpretation
 
-## 可选模型服务
-
-基础 Demo 无需配置此节。需要歌词语义与自动创作时，把 `.env.example` 复制为 `.env.local`，填写已经安装的 Ollama 模型名称和服务地址，重启 `pnpm dev`。
+The basic Demo needs no model. To explore lyric interpretation and per-song creative proposals, copy `.env.example` to `.env.local`, configure an already installed Ollama model, and restart `pnpm dev`:
 
 ```dotenv
 NARRATIVE_PROVIDER=ollama
 NARRATIVE_BASE_URL=http://127.0.0.1:11434
-NARRATIVE_MODEL=你的已安装模型名称
-CREATIVE_MODEL=你的已安装创作模型名称
+NARRATIVE_MODEL=your-installed-model-tag
+CREATIVE_MODEL=your-installed-creative-model-tag
 ```
 
-本仓库不捆绑或自动下载模型。配置兼容远程服务时，歌词和声学摘要会发送给该服务；音频文件本身不随分析请求上传。不要将密钥放入以 `VITE_` 开头的变量或提交 `.env.local`。
+Models are not bundled or automatically downloaded. Without a configured service, analysis falls back to acoustic pre-arrangement. Loudness and onset cues do not amount to melody recognition or lyric understanding.
 
-## 数据与边界
+Audio is decoded locally. If you configure a remote compatible service, lyrics and acoustic summaries are sent to that service; the audio file itself is not. Keep credentials in `.env.local`, never in `VITE_` variables or Git.
 
-- 默认城市与诗意预览是能力样例，不是某首商业歌曲的自动生成结果。
-- 当前不附带商业音乐、用户录音或完整商业歌词。请使用你有权使用的素材。
-- 音频留在浏览器，计划 JSON 不包含录音；刷新后需重新选择音频。
-- 纯文本歌词按粗略时间分配；起音不是精确拍点，声学摘要不是主旋律识别。
-- 自动导演仍属实验：语义、必要画面和艺术质量可能不一致。列车、动物、烟花、流星与跨世界梦境等长期愿景尚未完整实现。
-- 本版本不承诺任意歌曲都能生成成熟作品，不包含面向用户的视频导出。
+## The road ahead
 
-## 构建与检查
+The longer dream is for each song to have its own journey: an understanding of the whole song and its changing passages, followed by one or two cinematic moments with anticipation, revelation, time to linger and an afterglow.
+
+- **A stronger director:** connect lyrical meaning, essential imagery and climax design into a reliable, visibly convincing result. This is still experimental.
+- **A library that grows with purpose:** reuse scenes, atmospheres and components first; retain reviewed additions as reusable, versioned content.
+- **More places to dream:** nature, places shaped by different eras, trains, animals, fireworks, meteors, Earthrise and journeys across dream worlds remain future work.
+
+This Demo does not yet promise a finished film for an arbitrary song or provide user-facing video export. The screenshots show what can be authored and replayed today.
+
+## Build and contribute
+
+Built with **Vite · TypeScript · Three.js · browser audio**. A modular monolith keeps domain rules, application orchestration, adapters and rendering separate. Content has three layers: **scenes** define space, **atmospheres** define mood and weather, and **components** supply reusable objects. Model output is validated data, never arbitrary JavaScript.
 
 ```sh
 pnpm test
@@ -78,18 +147,14 @@ pnpm build
 pnpm preview
 ```
 
-这里的测试是独立于历史交接资料的 MVP 核心检查，不等于原开发仓库的完整测试集。
+`dist/` can be served statically for viewing, editing and local audio. Optional model endpoints require the development server or a separately deployed backend. Publishing the repository alone does not deploy a live site or an AI service.
 
-`dist/` 可交给静态服务器托管，支持相对资源路径。静态托管只有预览、编辑和本地音频等前端能力；可选模型接口需要运行 Vite 开发服务或另行部署服务端，不会因上传到 GitHub 自动获得 AI 能力。
+Small contributions are welcome: one visible or usable improvement, a short reproduction, and checks suited to the change. Please keep song-specific exceptions out of general logic and preserve the shared world and audio clock.
 
-## 结构与贡献
+[Source baseline](SOURCE.json) · [Recorded validation](VALIDATION.json) · [Report an issue](https://github.com/Gary-CF/Melody-Dream-Journey/issues)
 
-Vite + TypeScript + Three.js，保持模块化单体。`src/domain` 为数据与规则，应用编排通过适配器连接模型和存储，渲染器负责共享世界及播放。内容继续使用场景／氛围／组件三层，不执行模型生成的任意 JavaScript。
+## License and credits
 
-一次贡献围绕一个可观看或可操作的结果，附最小复现及对应检查；不要用歌曲名特例、降低校验门槛或新增抽象代替功能完成。
+Code and project-authored documentation are available under [MIT](LICENSE). Dependencies retain their own licenses; see [third-party notices](THIRD_PARTY_NOTICES.md). Bring music and lyrics you have permission to use; no commercial recordings are bundled.
 
-版本来源见 [SOURCE.json](SOURCE.json)，运行核验见 [VALIDATION.json](VALIDATION.json)。本公开候选从已验证源码节点导出，未携带原开发仓库的聊天交接记录、模型权重和 Git 历史。
-
-## 许可证
-
-项目代码使用 [MIT](LICENSE)。依赖和第三方内容保留各自许可，见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。本项目的许可证不授予任何用户上传音乐或歌词的权利。
+All gallery images are screenshots supplied by the project author. README organization takes inspiration from [video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft); its code, artwork and demo media are not included here.

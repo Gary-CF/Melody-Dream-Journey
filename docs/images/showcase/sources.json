@@ -1,0 +1,89 @@
+{
+  "note": "Original screenshots supplied by the project author. No crops, recoloring or scene regeneration. Golden-tree third capture omitted because it exactly duplicates the first, as approved by the author.",
+  "images": [
+    {
+      "scene": "city-dusk",
+      "file": "city-dusk-1.png",
+      "source": "联想截图_20261013113726.png",
+      "sha256": "7325c6f612dcc8f4358d6d327f90c3cb6a227172986eac4962213ff747206ff8"
+    },
+    {
+      "scene": "city-dusk",
+      "file": "city-dusk-2.png",
+      "source": "联想截图_20261013113736.png",
+      "sha256": "762721d471a0d301e397681bab8ee83df9c3d83cac50fbdfbfdfcab674217171"
+    },
+    {
+      "scene": "city-dusk",
+      "file": "city-dusk-3.png",
+      "source": "联想截图_20261013113747.png",
+      "sha256": "5c86da4c7cebf19d0d711a3690269fe5ce789c0bcda764c7c14c3387e72585ac"
+    },
+    {
+      "scene": "city-night",
+      "file": "city-night-1.png",
+      "source": "联想截图_20261013113949.png",
+      "sha256": "d068ce7db125ff8b3c5cc385528a6d01a4cd0e5746ede1f3bf61e54830678a0a"
+    },
+    {
+      "scene": "city-night",
+      "file": "city-night-2.png",
+      "source": "联想截图_20261013113958.png",
+      "sha256": "7c9f35427803476aeae8c1f2c166a21cfc78f103202f24cc5d17944d67e1cf54"
+    },
+    {
+      "scene": "city-night",
+      "file": "city-night-3.png",
+      "source": "联想截图_20261013114006.png",
+      "sha256": "a32eba29aafe125c8987ebcdf8be5d3f70e28d94f138a23bb369c72216e7b72e"
+    },
+    {
+      "scene": "moonlit-river",
+      "file": "moonlit-river-1.png",
+      "source": "联想截图_20261013114159.png",
+      "sha256": "b6d3c6e518b609b499125aefb4fe2d6988b5a2f835fd7e9605e754ca0d7e7f58"
+    },
+    {
+      "scene": "moonlit-river",
+      "file": "moonlit-river-2.png",
+      "source": "联想截图_20261013114208.png",
+      "sha256": "d9e01ff9a4a4eb2cb165dcec65831739a12df6953b17c35c3a1b52d7fa0e50ed"
+    },
+    {
+      "scene": "moonlit-river",
+      "file": "moonlit-river-3.png",
+      "source": "联想截图_20261013114215.png",
+      "sha256": "780b4fa9be047b9365b63022847a31a8512f45ce51f3272a684e67bf4619ae15"
+    },
+    {
+      "scene": "rainy-tavern",
+      "file": "rainy-tavern-1.png",
+      "source": "联想截图_20261013120212.png",
+      "sha256": "7cbe2b749ed7168b62bc85974cb1d7e775942a77e224823f49476e30258d6a7a"
+    },
+    {
+      "scene": "rainy-tavern",
+      "file": "rainy-tavern-2.png",
+      "source": "联想截图_20261013120223.png",
+      "sha256": "e1018d6e1201b755ce9ef30bf0cdfa0ebadf90fc45904c33905b31f700a8e811"
+    },
+    {
+      "scene": "rainy-tavern",
+      "file": "rainy-tavern-3.png",
+      "source": "联想截图_20261013120232.png",
+      "sha256": "cced45c7c4ed991b158776467b333898a91e0a0bfde121bac01824ec42dd6025"
+    },
+    {
+      "scene": "golden-tree",
+      "file": "golden-tree-1.png",
+      "source": "联想截图_20261013120340.png",
+      "sha256": "5a29225504512f650d2904c76c78e26a44bef61ddb962efc4eedbba65a74e78f"
+    },
+    {
+      "scene": "golden-tree",
+      "file": "golden-tree-2.png",
+      "source": "联想截图_20261013120348.png",
+      "sha256": "ccb5d12937a4f46c3ceb97f80979df37300d38964fb6479e4fdd785b4c2550eb"
+    }
+  ]
+}
